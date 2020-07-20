@@ -1,0 +1,4 @@
+# jenkins-plugin
+自动扫描并安装Jenkins安装失败的插件
+
+基于selenium的自动化流程，扫描并自动安装安装失败jenkins插件，由于本人的jenkins界面是英文，所以中文界面需要对代码中的部分元素选择器进行修正。
