@@ -20,13 +20,15 @@ public class App
             //指定驱动路径
             System.setProperty("webdriver.chrome.driver","D:\\download\\chromedriver_win32\\chromedriver.exe");
             WebDriver driver =new ChromeDriver();
-            driver.get("http://10.54.39.179:8888/");
+            //jenkins的访问首页地址
+            driver.get("http://10.10.10.10:8888/");
             Thread.sleep(2000);
             WebElement j_username = driver.findElement(By.id("j_username"));
             WebElement j_password = driver.findElement(By.name("j_password"));
-
-            j_username.sendKeys("admin");
-            j_password.sendKeys("admin");
+            // jenkins用户名
+            j_username.sendKeys("xxx");
+            // jenkins密码
+            j_password.sendKeys("xxx");
             WebElement submit = driver.findElement(By.name("Submit"));
             submit.click();
             WebElement manager = driver.findElement(By.linkText("Manage Jenkins"));
